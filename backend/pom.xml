@@ -12,7 +12,7 @@
     <artifactId>achat</artifactId>
     <version>1.0</version>
     <name>achat</name>
-    <description>Projet pour le module DevOps</description>
+    <description>Achat e-commerce</description>
     <properties>
         <java.version>17</java.version>
         <maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
@@ -30,10 +30,11 @@
 
         <!-- Database Dependency for Testing -->
         <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
+			<groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.28</version> <!-- Use the latest stable version -->
             <scope>runtime</scope>
-        </dependency>
+		</dependency>
 
         <!-- Lombok for Boilerplate Code -->
         <dependency>
