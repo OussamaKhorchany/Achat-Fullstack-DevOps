@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   backend:
-    image: ousskh/backend-achat:latest
+    image: ousskh/backend-achat:1.2
     ports:
       - "8089:8089"
     environment:
@@ -13,7 +13,7 @@ services:
       - db
 
   frontend:
-    image: ousskh/frontend-achat:latest
+    image: ousskh/frontend-achat:2.0
     ports:
       - "4200:80"
     depends_on:
